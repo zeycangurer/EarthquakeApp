@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button>Geri</ion-back-button>
+    </ion-buttons>
+    <ion-title>Detay</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+<ion-card color="{{siddet<2 ? 'light':siddet<2.5 ? 'dark':'danger'}}">
+  <ion-card-header>
+    <h5>Depremin Olduğu Yer</h5>
+    <ion-card-title><h6>{{yer}}</h6></ion-card-title>
+  </ion-card-header>
+  <ion-card-content>
+    <ion-text color="dark" style="font-weight: bold">
+      <h2>Detaylar</h2>
+    </ion-text>
+    <h3>Enlem: {{enlem}}</h3>
+    <h3>Boylam: {{boylam}}</h3>
+    <h3>Derinlik: {{derinlik}}</h3>
+    <h2><b>Şiddet: {{siddet}}</b></h2>
+  </ion-card-content>
+</ion-card>
+
+</ion-content>
